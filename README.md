@@ -1,5 +1,11 @@
 # ip2geo — PHP SDK
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/ip2geo/ip2geo-php)](https://packagist.org/packages/ip2geo/ip2geo-php)
+[![Total Downloads](https://img.shields.io/packagist/dt/ip2geo/ip2geo-php)](https://packagist.org/packages/ip2geo/ip2geo-php)
+[![License](https://img.shields.io/packagist/l/ip2geo/ip2geo-php)](https://packagist.org/packages/ip2geo/ip2geo-php)
+[![PHP Version](https://img.shields.io/packagist/php-v/ip2geo/ip2geo-php)](https://packagist.org/packages/ip2geo/ip2geo-php)
+[![Repo Size](https://img.shields.io/github/repo-size/vijaykrpp/ip2geo-php)](https://github.com/vijaykrpp/ip2geo/ip2geo-php)
+
 Official PHP SDK for the **Ip2Geo API** — fast IP geolocation, network intelligence, and security risk detection.
 
 ---
@@ -229,3 +235,4 @@ $data = $client->lookup("8.8.8.8", [
 
 Full API documentation and field reference:
 [https://ip2geoapi.com/documentation/](https://ip2geoapi.com/documentation/)
+
